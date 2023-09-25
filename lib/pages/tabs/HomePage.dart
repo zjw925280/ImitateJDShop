@@ -12,7 +12,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
+        child:Column(
+          children: [
             GestureDetector(
               child: Text("点击跳转搜索页面"
                 ,),
@@ -20,6 +21,10 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushNamed(context, '/search');
               },
             ),
+
+          ],
+        )
+
       ),
     );
   }
